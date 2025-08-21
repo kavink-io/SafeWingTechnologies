@@ -26,3 +26,22 @@
   padding-top: 2rem;
   margin-top: 2rem;
 }
+
+/* Custom styles for the footer in dark mode */
+[data-theme="dark"] .footer {
+    background-color: #000000; /* Custom Black Background */
+    border-top: 1px solid #333;
+}
+
+[data-theme="dark"] .footer h3 {
+    color: #4A90E2; /* Custom Bright Blue */
+}
+
+[data-theme="dark"] .footer p {
+    color: #BDC3C7; /* Custom Light Gray */
+}
+
+[data-theme="dark"] .footer-bottom p {
+    color: #7F8C8D; /* Custom Darker Gray */
+    border-top-color: #333;
+}

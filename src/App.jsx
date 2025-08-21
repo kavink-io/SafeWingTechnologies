@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Problem from './components/Problem';
 import Features from './components/Features';
-import Competition from './components/Competition';
 import Market from './components/Market';
 import WhyNow from './components/WhyNow';
 import FutureVision from './components/FutureVision';
@@ -35,7 +34,6 @@ const App = () => {
         <AboutUs />
         <Problem />
         <Features />
-        <Competition />
         <Market />
         <WhyNow />
         <FutureVision />

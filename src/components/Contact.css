@@ -3,7 +3,8 @@
 .contact-wrapper {
   max-width: 700px;
   margin: 0 auto;
-  background-color: var(--white);
+  /* This line is changed from var(--white) to var(--card-background) */
+  background-color: var(--card-background);
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -12,7 +13,7 @@
 
 .contact-info-standalone h3 {
   font-size: 1.8rem;
-  color: var(--secondary-color);
+  color: var(--heading-color);
   margin-bottom: 1rem;
 }
 

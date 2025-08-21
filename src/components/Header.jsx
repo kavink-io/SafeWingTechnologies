@@ -9,7 +9,7 @@ const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="header">
       <nav className="container">
-        <a href="#home" className="logo">Guardian Bee</a>
+        <a href="#home" className="logo">SafeWing Technologies</a>
         <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
           <li><a href="#about" onClick={() => setIsOpen(false)}>About Us</a></li>
           <li><a href="#problem" onClick={() => setIsOpen(false)}>The Problem</a></li>

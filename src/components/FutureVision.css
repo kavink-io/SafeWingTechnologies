@@ -6,10 +6,16 @@
 }
 
 .vision-item {
-    background-color: var(--white);
+    /* This line is changed from var(--white) */
+    background-color: var(--card-background);
     padding: 1.5rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     border-left: 5px solid var(--primary-color);
+}
+
+/* This makes sure the bolded text is bright in dark mode */
+.vision-item strong {
+    color: var(--heading-color);
 }

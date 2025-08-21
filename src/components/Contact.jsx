@@ -17,11 +17,11 @@ const Contact = () => {
             <a href="mailto:safewingtechnologies@gmail.com" className="info-item">
               <FaEnvelope /> safewingtechnologies@gmail.com
             </a>
-            <a href="tel:+91 93602 94148" className="info-item">
-              <FaPhone /> +91 93602 94148
+            <a href="tel:+91 77089 83095" className="info-item">
+              <FaPhone /> +91 77089 83095
             </a>
             <div className="social-media-standalone">
-              <a href="https://www.linkedin.com/in/kavink01/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={28} /></a>
+              <a href="https://www.linkedin.com/in/janani-s-58051328b/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={28} /></a>
               <a href="https://github.com/kavink-io" target="_blank" rel="noopener noreferrer"><FaGithub size={28} /></a>
             </div>
           </div>
