@@ -21,18 +21,28 @@
   height: 5rem;
 }
 
+/* START: New and Updated Logo Styles */
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
+  /* Add flexbox to align image and text */
+  display: flex;
+  align-items: center;
+  gap: 0.01%; /* Controls space between logo and text */
 }
+
+.logo-image {
+  height: 40px; /* Adjust the height of your logo */
+  width: auto;
+}
+/* END: New and Updated Logo Styles */
 
 .nav-menu {
   display: flex;
   list-style: none;
   gap: 2rem;
-  /* The margin-left: auto; rule has been removed */
 }
 
 .nav-menu a {
