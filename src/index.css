@@ -1,14 +1,25 @@
 /* src/index.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
   --primary-color: #3b82f6;
   --secondary-color: #1e293b;
   --background-color: #f1f5f9;
+  --card-background: #ffffff;
   --text-color: #334155;
+  --heading-color: #1e293b;
   --white: #ffffff;
   --gray: #94a3b8;
+  --transition-speed: 0.3s;
+}
+
+[data-theme="dark"] {
+  --primary-color: #3b82f6;
+  --secondary-color: #e2e8f0;
+  --background-color: #0f172a;
+  --card-background: #1e293b;
+  --text-color: #94a3b8;
+  --heading-color: #f1f5f9;
 }
 
 * {
@@ -22,6 +33,7 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 .container {
@@ -31,24 +43,25 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 6rem 1rem;
   overflow: hidden;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--secondary-color);
+  color: var(--heading-color);
+  transition: color var(--transition-speed) ease;
 }
 
 .card {
-  background-color: var(--white);
+  background-color: var(--card-background);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color var(--transition-speed) ease;
 }
 
 .card:hover {
@@ -68,4 +81,9 @@ section {
 
 .btn:hover {
   background-color: #2563eb;
+}
+
+/* Add transition to all elements */
+* {
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease;
 }

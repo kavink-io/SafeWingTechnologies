@@ -1,14 +1,17 @@
 /* src/components/Header.css */
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-background);
+}
+
+[data-theme="dark"] .header {
+    background-color: rgba(30, 41, 59, 0.8);
 }
 
 .header nav {
@@ -29,17 +32,24 @@
   display: flex;
   list-style: none;
   gap: 2rem;
+  /* The margin-left: auto; rule has been removed */
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--heading-color);
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
   color: var(--primary-color);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .hamburger {
@@ -52,7 +62,7 @@
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: var(--secondary-color);
+  background-color: var(--heading-color);
   transition: all 0.3s ease-in-out;
 }
 
@@ -60,13 +70,17 @@
   .hamburger {
     display: block;
   }
+  
+  .nav-menu {
+    margin-left: 0; 
+  }
 
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--card-background);
     width: 100%;
     text-align: center;
     transition: 0.3s;
