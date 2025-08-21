@@ -1,0 +1,23 @@
+/* src/components/Market.css */
+
+.market-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.market-grid .card ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.market-grid .card li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+}

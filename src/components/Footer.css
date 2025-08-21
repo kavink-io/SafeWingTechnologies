@@ -1,0 +1,28 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  color: var(--gray);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  border-top: 1px solid #334155;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}

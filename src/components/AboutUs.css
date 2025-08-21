@@ -1,0 +1,23 @@
+/* src/components/AboutUs.css */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
