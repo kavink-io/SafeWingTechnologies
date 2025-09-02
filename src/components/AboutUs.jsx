@@ -15,11 +15,6 @@ const teamMembers = [
     role: 'Co-Founder & Lead Engineer',
     description: 'Kavin is the technical architect of Guardian Bee. He oversees all aspects of the drone\'s hardware and software engineering, ensuring a seamless and reliable user experience.'
   },
-  {
-    name: 'Jeyavarsha A',
-    role: 'Co-Founder & Design Lead',
-    description: 'Jeyavarsha leads the design and user experience. Her focus is on making Guardian Bee not only functional but also intuitive, portable, and a product people can trust.'
-  }
 ];
 
 const AboutUs = () => {
