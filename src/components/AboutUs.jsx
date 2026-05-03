@@ -10,11 +10,7 @@ const teamMembers = [
     role: 'Founder & CEO',
     description: 'The visionary behind Guardian Bee, Janani leads the project with a passion for leveraging technology to create a safer world for women. She manages the overall product strategy and development.'
   },
-  {
-    name: 'Kavin K',
-    role: 'Co-Founder & Lead Engineer',
-    description: 'Kavin is the technical architect of Guardian Bee. He oversees all aspects of the drone\'s hardware and software engineering, ensuring a seamless and reliable user experience.'
-  },
+  
 ];
 
 const AboutUs = () => {
